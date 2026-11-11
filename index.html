@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Bahia International Realty | Casas y condos nuevos en Miami</title>
+<meta name="description" content="Bahia International Realty en Doral, Florida. Casas y condominios nuevos en Miami y Sur de Florida, atención en español e inglés.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Bahia International Realty","url":"https://www.miamiinmuebles.com/","telephone":"+1-305-423-9954","address":{"@type":"PostalAddress","streetAddress":"8400 NW 33rd St. Suite 105","addressLocality":"Doral","addressRegion":"FL","postalCode":"33122","addressCountry":"US"},"employee":[{"@type":"Person","name":"Jennifer Cook","jobTitle":"REALTOR®/Owner"},{"@type":"Person","name":"Raul Aleman","jobTitle":"REALTOR®/Owner"}],"areaServed":["Miami","Miami Beach","Doral","Coral Gables","Aventura","Sunny Isles Beach","Weston","Fort Lauderdale","Hollywood"]}
+</script>
+<style>
+:root{
+  --bg:#141317; --bg2:#1d1c21; --bg3:#26242a;
+  --brand:#958355; --accent:#d3c08a; --text:#f4f0e6; --muted:#b9b4a8; --line:rgba(211,192,138,.22);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+  --wa:#1fa855;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,100% - 48px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em}
+.eyebrow{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:2px;font-weight:600;font-size:.95rem;letter-spacing:.02em;transition:transform .25s,background .25s,color .25s,border-color .25s}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{transform:translateY(-2px);background:#18914a}
+.btn-line{border:1px solid rgba(244,240,230,.55);color:var(--text)}
+.btn-line:hover{border-color:var(--accent);color:var(--accent)}
+.btn-gold{background:var(--brand);color:#141317}
+.btn-gold:hover{background:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 28px;transition:background .3s}
+.nav.solid{background:rgba(20,19,23,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .links{display:flex;gap:30px;font-size:.88rem;font-weight:500}
+.nav .links a:hover{color:var(--accent)}
+.lang{display:flex;border:1px solid var(--line);border-radius:2px}
+.lang button{min-width:44px;min-height:40px;background:none;border:0;color:var(--muted);font:600 .8rem var(--sans);letter-spacing:.1em;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--brand);color:#141317}
+.nav-right{display:flex;align-items:center;gap:22px}
+.brand-mini{width:56px}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:640px;display:flex;align-items:flex-end;overflow:hidden}
+.slides,.slides img{position:absolute;inset:0;width:100%;height:100%}
+.slides img{object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1.6s ease,transform 9s ease}
+.slides img.on{opacity:1;transform:scale(1)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,19,23,.55) 0%,rgba(20,19,23,.15) 38%,rgba(20,19,23,.92) 100%),linear-gradient(90deg,rgba(20,19,23,.6),transparent 65%)}
+.hero-in{position:relative;z-index:2;padding-bottom:clamp(48px,9vh,96px)}
+.hero-logo{width:clamp(130px,14vw,190px);margin-bottom:26px}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.6rem);max-width:15ch}
+.hero h1 em{color:var(--accent);font-style:italic}
+.hero p.sub{max-width:52ch;margin:22px 0 34px;color:#e4dfd2;font-size:1.08rem}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.dots{position:absolute;z-index:3;right:28px;bottom:40px;display:flex;gap:8px}
+.dots i{width:28px;height:2px;background:rgba(255,255,255,.35)}
+.dots i.on{background:var(--accent)}
+
+/* sections */
+section{position:relative}
+.pad{padding:clamp(72px,11vw,150px) 0}
+.sec-h{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:48px}
+.sec-h h2{font-size:clamp(2.2rem,4.6vw,4rem);max-width:16ch;margin-top:12px}
+.sec-h p{max-width:42ch;color:var(--muted)}
+
+/* gallery */
+.dev{background:var(--bg2);overflow:hidden}
+.dev-head{padding-top:clamp(72px,11vw,130px)}
+.track{display:flex;gap:28px;padding:0 max(24px,calc((100vw - 1240px)/2));will-change:transform}
+.card{flex:0 0 min(420px,78vw);background:var(--bg);border:1px solid var(--line);display:flex;flex-direction:column}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--bg3)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.card:hover .ph img{transform:scale(1.05)}
+.card .bd{padding:22px 24px 26px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:1.65rem}
+.card .loc{color:var(--muted);font-size:.9rem}
+.card .pr{margin-top:auto;padding-top:14px;display:flex;justify-content:space-between;align-items:center;color:var(--accent);font-weight:600}
+.card .pr span:last-child{font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text)}
+.dev-pad{padding:44px 0 clamp(40px,6vw,70px)}
+.more{padding:0 24px clamp(60px,8vw,100px);text-align:center}
+@media(max-width:899px){
+  .dev-scroller{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .track{width:max-content;padding:0 24px}
+  .card{scroll-snap-align:center}
+}
+
+/* zones */
+.zones ul{list-style:none;border-top:1px solid var(--line)}
+.zones li a{display:flex;justify-content:space-between;align-items:center;min-height:64px;padding:14px 4px;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.5rem);transition:padding .3s,color .3s}
+.zones li a span{font-family:var(--sans);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.zones li a:hover{padding-left:22px;color:var(--accent)}
+.zones .cols{columns:2;column-gap:60px}
+.zones .cols li{break-inside:avoid}
+@media(max-width:760px){.zones .cols{columns:1}}
+
+/* about */
+.about{background:var(--bg2)}
+.people{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-bottom:70px}
+.person{display:grid;grid-template-columns:150px 1fr;gap:26px;align-items:start;border-top:1px solid var(--line);padding-top:26px}
+.person img{width:150px;height:150px;object-fit:cover;border-radius:2px}
+.person h3{font-size:2rem}
+.person .role{font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:6px 0 12px;font-weight:600}
+.person p{color:var(--muted);font-size:.96rem}
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.rev{border-left:2px solid var(--brand);padding:4px 0 4px 26px}
+.rev blockquote{font-family:var(--serif);font-size:1.35rem;line-height:1.4;font-style:italic}
+.rev cite{display:block;margin-top:14px;font-style:normal;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.note{margin-top:30px;color:var(--muted);font-size:.84rem}
+.trust{display:flex;align-items:center;gap:18px;margin-top:40px;color:var(--muted);font-size:.9rem}
+.trust img{width:110px;border-radius:2px;background:#fff;padding:6px}
+@media(max-width:899px){.people,.reviews{grid-template-columns:1fr}}
+@media(max-width:480px){.person{grid-template-columns:1fr}.person img{width:120px;height:120px}}
+
+/* contact */
+.contact{min-height:80vh;display:flex;align-items:center;overflow:hidden}
+.contact .bg{position:absolute;inset:0}
+.contact .bg img{width:100%;height:100%;object-fit:cover}
+.contact::after{content:"";position:absolute;inset:0;background:rgba(20,19,23,.82)}
+.contact .wrap{position:relative;z-index:2}
+.contact h2{font-size:clamp(2.4rem,5.5vw,5rem);max-width:14ch;margin:14px 0 22px}
+.contact p.l{max-width:50ch;color:#e4dfd2;margin-bottom:34px}
+.cinfo{display:flex;flex-wrap:wrap;gap:34px;margin-top:46px;padding-top:30px;border-top:1px solid var(--line);font-size:.95rem}
+.cinfo small{display:block;color:var(--accent);letter-spacing:.18em;text-transform:uppercase;font-size:.7rem;margin-bottom:4px;font-weight:600}
+.cinfo a{display:inline-block;min-height:44px;padding-top:8px}
+.cinfo a:hover{color:var(--accent)}
+
+footer{background:#0e0d10;padding:46px 0;color:var(--muted);font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer img{width:84px}
+
+.float{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;align-items:center;gap:10px;min-height:56px;padding:0 22px 0 18px;border-radius:40px;background:var(--wa);color:#fff;font-weight:700;font-size:.92rem;box-shadow:0 10px 30px rgba(0,0,0,.4);transition:transform .25s}
+.float:hover{transform:translateY(-3px)}
+.float svg{width:24px;height:24px;fill:#fff}
+@media(max-width:560px){.float span{display:none}.float{padding:0;width:56px;justify-content:center}.nav .links{display:none}.nav{padding:10px 16px}.brand-mini{width:46px}.nav-right{gap:10px}.wrap{width:calc(100% - 32px)}.dots{display:none}}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .slides img{transition:opacity .01s;transform:none}
+  .card .ph img,.btn,.float{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#top" aria-label="Bahia International Realty"><img class="brand-mini" src="assets/logo-light.webp" alt="Bahia International Realty" width="56" height="47"></a>
+  <div class="nav-right">
+    <nav class="links" aria-label="Principal">
+      <a href="#desarrollos" data-i18n="nav_dev">Desarrollos</a>
+      <a href="#zonas" data-i18n="nav_zones">Zonas</a>
+      <a href="#nosotros" data-i18n="nav_about">Nosotros</a>
+      <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="Inicio">
+  <div class="slides" aria-hidden="true">
+    <img class="on" src="assets/hero1.webp" alt="" fetchpriority="high">
+    <img src="assets/hero2.webp" alt="" loading="lazy">
+    <img src="assets/hero3.webp" alt="" loading="lazy">
+  </div>
+  <div class="wrap hero-in">
+    <img class="hero-logo" src="assets/logo-light.webp" alt="Bahia International Realty" width="190" height="160">
+    <h1 data-i18n-html="h1">Casas y condos nuevos en Miami, <em>en tu idioma.</em></h1>
+    <p class="sub" data-i18n="sub">Bahia International Realty te acompaña en todo el proceso de compra en Miami y el Sur de Florida, desde nuestra oficina en Doral.</p>
+    <div class="cta">
+      <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener" data-i18n="cta_wa">Escribir por WhatsApp</a>
+      <a class="btn btn-line" href="#desarrollos" data-i18n="cta_dev">Ver desarrollos</a>
+    </div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+</section>
+
+<section class="dev" id="desarrollos">
+  <div class="wrap dev-head">
+    <div class="sec-h rv">
+      <div><span class="eyebrow" data-i18n="dev_eye">Casas y condos nuevos</span>
+      <h2 data-i18n="dev_h">Desarrollos destacados</h2></div>
+      <p data-i18n="dev_p">Selección de propiedades nuevas publicadas en miamiinmuebles.com. Cada tarjeta abre la ficha completa.</p>
+    </div>
+  </div>
+  <div class="dev-scroller" id="scroller">
+  <div class="track dev-pad" id="track">
+    <a class="card" href="https://www.miamiinmuebles.com/result_newhome.php?id=42265650" target="_blank" rel="noopener"><div class="ph"><img src="assets/dev-melia.webp" alt="Meliá Residences Miami Brickell" loading="lazy" width="800" height="393"></div><div class="bd"><h3>Meliá Residences</h3><span class="loc">Miami Brickell</span><div class="pr"><span>$501,000</span><span data-i18n="view">Ver ficha</span></div></div></a>
+    <a class="card" href="https://www.miamiinmuebles.com/result_newhome.php?id=38523053" target="_blank" rel="noopener"><div class="ph"><img src="assets/dev-ella.webp" alt="Ella Miami Beach" loading="lazy" width="800" height="533"></div><div class="bd"><h3>Ella Miami Beach</h3><span class="loc">Miami Beach</span><div class="pr"><span>$633,000</span><span data-i18n="view">Ver ficha</span></div></div></a>
+    <a class="card" href="https://www.miamiinmuebles.com/result_newhome.php?id=38545315" target="_blank" rel="noopener"><div class="ph"><img src="assets/dev-domus.webp" alt="Domus Brickell Center" loading="lazy" width="800" height="450"></div><div class="bd"><h3>Domus Brickell Center</h3><span class="loc">Brickell</span><div class="pr"><span>$635,900</span><span data-i18n="view">Ver ficha</span></div></div></a>
+    <a class="card" href="https://www.miamiinmuebles.com/result_newhome.php?id=36395625" target="_blank" rel="noopener"><div class="ph"><img src="assets/dev-viceroy.webp" alt="Viceroy Residences Fort Lauderdale" loading="lazy" width="800" height="450"></div><div class="bd"><h3>Viceroy Residences</h3><span class="loc">Fort Lauderdale</span><div class="pr"><span>$715,000</span><span data-i18n="view">Ver ficha</span></div></div></a>
+    <a class="card" href="https://www.miamiinmuebles.com/result_newhome.php?id=38523046" target="_blank" rel="noopener"><div class="ph"><img src="assets/dev-shoma.webp" alt="Shoma Bay Residences" loading="lazy" width="800" height="563"></div><div class="bd"><h3>Shoma Bay Residences</h3><span class="loc">Miami</span><div class="pr"><span>$966,000</span><span data-i18n="view">Ver ficha</span></div></div></a>
+    <a class="card" href="https://www.miamiinmuebles.com/result_newhome.php?id=35732572" target="_blank" rel="noopener"><div class="ph"><img src="assets/dev-icon.webp" alt="Icon Beach Residences Hollywood Beach" loading="lazy" width="800" height="534"></div><div class="bd"><h3>Icon Beach Residences</h3><span class="loc">Hollywood Beach</span><div class="pr"><span>$995,000</span><span data-i18n="view">Ver ficha</span></div></div></a>
+    <a class="card" href="https://www.miamiinmuebles.com/result_newhome.php?id=42247217" target="_blank" rel="noopener"><div class="ph"><img src="assets/dev-edition.webp" alt="EDITION Edgewater" loading="lazy" width="800" height="450"></div><div class="bd"><h3>EDITION</h3><span class="loc">Edgewater</span><div class="pr"><span>$1,700,000</span><span data-i18n="view">Ver ficha</span></div></div></a>
+    <a class="card" href="https://www.miamiinmuebles.com/result_newhome.php?id=42265647" target="_blank" rel="noopener"><div class="ph"><img src="assets/dev-cipriani.webp" alt="Cipriani Residences Brickell" loading="lazy" width="676" height="450"></div><div class="bd"><h3>Cipriani Residences</h3><span class="loc">Brickell</span><div class="pr"><span>$1,754,000</span><span data-i18n="view">Ver ficha</span></div></div></a>
+    <a class="card" href="https://www.miamiinmuebles.com/result_newhome.php?id=38523051" target="_blank" rel="noopener"><div class="ph"><img src="assets/dev-dg888.webp" alt="888 Brickell by Dolce&amp;Gabbana" loading="lazy" width="800" height="400"></div><div class="bd"><h3>888 Brickell by Dolce&amp;Gabbana</h3><span class="loc">Brickell</span><div class="pr"><span>$2,100,000</span><span data-i18n="view">Ver ficha</span></div></div></a>
+  </div>
+  </div>
+  <div class="more"><a class="btn btn-line" href="https://www.miamiinmuebles.com/casas-nuevas-en-miami.php" target="_blank" rel="noopener" data-i18n="all_dev">Ver todos los desarrollos</a></div>
+</section>
+
+<section class="zones pad" id="zonas">
+  <div class="wrap">
+    <div class="sec-h rv">
+      <div><span class="eyebrow" data-i18n="z_eye">Dónde buscar</span>
+      <h2 data-i18n="z_h">Zonas del Sur de Florida</h2></div>
+      <p data-i18n="z_p">Cada zona abre la búsqueda de propiedades en el sitio de Bahia International Realty.</p>
+    </div>
+    <ul class="cols rv">
+      <li><a href="https://www.miamiinmuebles.com/Miami" target="_blank" rel="noopener">Miami <span>→</span></a></li>
+      <li><a href="https://www.miamiinmuebles.com/Miami-Beach" target="_blank" rel="noopener">Miami Beach <span>→</span></a></li>
+      <li><a href="https://www.miamiinmuebles.com/Doral" target="_blank" rel="noopener">Doral <span>→</span></a></li>
+      <li><a href="https://www.miamiinmuebles.com/Coral-Gables" target="_blank" rel="noopener">Coral Gables <span>→</span></a></li>
+      <li><a href="https://www.miamiinmuebles.com/Aventura" target="_blank" rel="noopener">Aventura <span>→</span></a></li>
+      <li><a href="https://www.miamiinmuebles.com/Sunny-Isles-Beach" target="_blank" rel="noopener">Sunny Isles Beach <span>→</span></a></li>
+      <li><a href="https://www.miamiinmuebles.com/Fort-Lauderdale" target="_blank" rel="noopener">Fort Lauderdale <span>→</span></a></li>
+      <li><a href="https://www.miamiinmuebles.com/Hollywood" target="_blank" rel="noopener">Hollywood <span>→</span></a></li>
+      <li><a href="https://www.miamiinmuebles.com/Weston" target="_blank" rel="noopener">Weston <span>→</span></a></li>
+      <li><a href="https://www.miamiinmuebles.com/Miramar" target="_blank" rel="noopener">Miramar <span>→</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="about pad" id="nosotros">
+  <div class="wrap">
+    <div class="sec-h rv">
+      <div><span class="eyebrow" data-i18n="a_eye">Nosotros</span>
+      <h2 data-i18n="a_h">Las personas detrás de Bahia</h2></div>
+    </div>
+    <div class="people rv">
+      <article class="person"><img src="assets/jennifer.webp" alt="Jennifer Cook" loading="lazy" width="150" height="150"><div><h3>Jennifer Cook</h3><div class="role">REALTOR®/Owner</div><p data-i18n="jen">Licenciada en Comunicaciones y Español por Regis University. Habla español con fluidez.</p></div></article>
+      <article class="person"><img src="assets/raul.webp" alt="Raul Aleman" loading="lazy" width="150" height="150"><div><h3>Raul Aleman</h3><div class="role">REALTOR®/Owner</div><p data-i18n="raul">Máster en Ingeniería Mecánica del MIT. Bilingüe, con más de 5 años en bienes raíces.</p></div></article>
+    </div>
+    <div class="reviews rv">
+      <figure class="rev"><blockquote lang="es">“Una empresa excelente. Cuentan con un maravilloso equipo de trabajo. Todos muy profesionales y atentos a las necesidades de sus clientes.”</blockquote><cite>Patricia N.</cite></figure>
+      <figure class="rev"><blockquote lang="es">“Estamos muy contentos con su atención… fue una excelente experiencia tan importante en nuestras vidas como la compra de una casa.”</blockquote><cite>Monica J.</cite></figure>
+    </div>
+    <p class="note" data-i18n="rev_note">Extractos de reseñas de clientes en miamiinmuebles.com</p>
+    <div class="trust"><img src="assets/bbb.webp" alt="Better Business Bureau" loading="lazy" width="110" height="42"><span data-i18n="bbb">Empresa acreditada por el Better Business Bureau.</span></div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="bg"><img src="assets/hero4.webp" alt="" loading="lazy"></div>
+  <div class="wrap pad">
+    <span class="eyebrow" data-i18n="c_eye">Contacto</span>
+    <h2 data-i18n="c_h">Hablemos de tu próxima propiedad.</h2>
+    <p class="l" data-i18n="c_p">Escríbenos por WhatsApp o llámanos. Te respondemos en español o inglés.</p>
+    <div class="cta">
+      <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener" data-i18n="cta_wa">Escribir por WhatsApp</a>
+      <a class="btn btn-line" href="tel:+13054239954">305-423-9954</a>
+      <a class="btn btn-line" href="https://www.miamiinmuebles.com/contact.php" target="_blank" rel="noopener" data-i18n="c_form">Formulario de contacto</a>
+    </div>
+    <div class="cinfo">
+      <div><small data-i18n="c_phone">Teléfono</small><a href="tel:+13054239954">305-423-9954</a></div>
+      <div><small data-i18n="c_addr">Oficina</small>8400 NW 33rd St. Suite 105<br>Doral, FL 33122</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo-light.webp" alt="Bahia International Realty" width="84" height="71">
+    <span>© Bahia International Realty · Doral, FL</span>
+    <span data-i18n="demo">Demo de rediseño · No es el sitio oficial</span>
+  </div>
+</footer>
+
+<a class="float" data-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.4 15.1L2 22l5-1.6A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.3 15l-.3-.2-3 .9 1-2.9-.2-.3A8.1 8.1 0 0 1 12.04 3.8zM8.6 7.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.7 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4l-1.8-.9c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.3 0-.4.1-.6l.4-.5.3-.4c.1-.2 0-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+var T={
+es:{nav_dev:"Desarrollos",nav_zones:"Zonas",nav_about:"Nosotros",nav_contact:"Contacto",
+h1:"Casas y condos nuevos en Miami, <em>en tu idioma.</em>",
+sub:"Bahia International Realty te acompaña en todo el proceso de compra en Miami y el Sur de Florida, desde nuestra oficina en Doral.",
+cta_wa:"Escribir por WhatsApp",cta_dev:"Ver desarrollos",dev_eye:"Casas y condos nuevos",dev_h:"Desarrollos destacados",
+dev_p:"Selección de propiedades nuevas publicadas en miamiinmuebles.com. Cada tarjeta abre la ficha completa.",view:"Ver ficha",all_dev:"Ver todos los desarrollos",
+z_eye:"Dónde buscar",z_h:"Zonas del Sur de Florida",z_p:"Cada zona abre la búsqueda de propiedades en el sitio de Bahia International Realty.",
+a_eye:"Nosotros",a_h:"Las personas detrás de Bahia",
+jen:"Licenciada en Comunicaciones y Español por Regis University. Habla español con fluidez.",
+raul:"Máster en Ingeniería Mecánica del MIT. Bilingüe, con más de 5 años en bienes raíces.",
+rev_note:"Extractos de reseñas de clientes en miamiinmuebles.com",bbb:"Empresa acreditada por el Better Business Bureau.",
+c_eye:"Contacto",c_h:"Hablemos de tu próxima propiedad.",c_p:"Escríbenos por WhatsApp o llámanos. Te respondemos en español o inglés.",
+c_form:"Formulario de contacto",c_phone:"Teléfono",c_addr:"Oficina",demo:"Demo de rediseño · No es el sitio oficial",
+wa:"Hola, vi la página de Bahia International Realty y quisiera información sobre casas y condos nuevos en Miami."},
+en:{nav_dev:"Developments",nav_zones:"Areas",nav_about:"About",nav_contact:"Contact",
+h1:"New homes and condos in Miami, <em>in your language.</em>",
+sub:"Bahia International Realty guides you through the whole buying process in Miami and South Florida, from our Doral office.",
+cta_wa:"Message on WhatsApp",cta_dev:"View developments",dev_eye:"New homes and condos",dev_h:"Featured developments",
+dev_p:"A selection of new properties listed on miamiinmuebles.com. Each card opens the full listing.",view:"View listing",all_dev:"See all developments",
+z_eye:"Where to look",z_h:"South Florida areas",z_p:"Each area opens the property search on the Bahia International Realty site.",
+a_eye:"About us",a_h:"The people behind Bahia",
+jen:"Degree in Communications and Spanish from Regis University. Fluent in Spanish.",
+raul:"MSc in Mechanical Engineering from MIT. Bilingual, with more than 5 years in real estate.",
+rev_note:"Excerpts from client reviews on miamiinmuebles.com (original Spanish)",bbb:"Company accredited by the Better Business Bureau.",
+c_eye:"Contact",c_h:"Let’s talk about your next property.",c_p:"Message us on WhatsApp or call. We reply in English or Spanish.",
+c_form:"Contact form",c_phone:"Phone",c_addr:"Office",demo:"Redesign demo · Not the official site",
+wa:"Hello, I saw the Bahia International Realty page and would like information about new homes and condos in Miami."}
+};
+var WA="https://api.whatsapp.com/send?phone=18134055487&text=";
+function setLang(l){
+  var d=T[l]||T.es; document.documentElement.lang=l;
+  document.querySelectorAll("[data-i18n]").forEach(function(e){var k=e.getAttribute("data-i18n");if(d[k])e.textContent=d[k]});
+  document.querySelectorAll("[data-i18n-html]").forEach(function(e){var k=e.getAttribute("data-i18n-html");if(d[k])e.innerHTML=d[k]});
+  document.querySelectorAll("[data-wa]").forEach(function(e){e.href=WA+encodeURIComponent(d.wa)});
+  document.querySelectorAll("[data-lang]").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.lang===l)});
+  try{localStorage.setItem("lang",l)}catch(e){}
+}
+var saved="es";try{saved=localStorage.getItem("lang")||"es"}catch(e){}
+setLang(saved);
+document.querySelectorAll("[data-lang]").forEach(function(b){b.addEventListener("click",function(){setLang(b.dataset.lang)})});
+
+var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var nav=document.getElementById("nav");
+function onS(){nav.classList.toggle("solid",window.scrollY>40)}onS();addEventListener("scroll",onS,{passive:true});
+
+var sl=document.querySelectorAll(".slides img"),dots=document.querySelectorAll(".dots i"),i=0;
+if(!reduce){setInterval(function(){sl[i].classList.remove("on");dots[i].classList.remove("on");i=(i+1)%sl.length;sl[i].classList.add("on");dots[i].classList.add("on")},5200)}
+
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll(".rv").forEach(function(e){io.observe(e)});
+
+if(window.gsap&&window.ScrollTrigger&&!reduce){
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.matchMedia({"(min-width: 900px)":function(){
+    var tr=document.getElementById("track"),sc=document.getElementById("scroller");
+    var dist=function(){return tr.scrollWidth-window.innerWidth+48};
+    gsap.to(tr,{x:function(){return -dist()},ease:"none",scrollTrigger:{trigger:sc,start:"top 12%",end:function(){return "+="+dist()},pin:true,scrub:.6,invalidateOnRefresh:true,anticipatePin:1}});
+  }});
+}
+})();
+</script>
+</body>
+</html>
